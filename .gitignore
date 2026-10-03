@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+data/
+*.npy
+*.pt
+__pycache__/
+.pytest_cache/
