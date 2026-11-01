@@ -1,0 +1,53 @@
+{
+  "model": "transformer",
+  "horizon": 10,
+  "source": "notebooks/kaggle_train.ipynb (Kaggle GPU, Tesla P100, torch 2.5.1+cu121)",
+  "metrics": {
+    "accuracy": 0.7918387244780913,
+    "macro_f1": 0.6958457435949628,
+    "per_class": {
+      "down": {
+        "precision": 0.6055385755302399,
+        "recall": 0.6189236521986085,
+        "f1": 0.6121579551040471,
+        "support": 21127
+      },
+      "stationary": {
+        "precision": 0.8789405096806222,
+        "recall": 0.8618790693900732,
+        "f1": 0.8703261815761175,
+        "support": 98602
+      },
+      "up": {
+        "precision": 0.5844100726209563,
+        "recall": 0.6272078546485146,
+        "f1": 0.6050530941047235,
+        "support": 19759
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "down",
+        "stationary",
+        "up"
+      ],
+      "matrix": [
+        [
+          13076,
+          6134,
+          1917
+        ],
+        [
+          6723,
+          84983,
+          6896
+        ],
+        [
+          1795,
+          5571,
+          12393
+        ]
+      ]
+    }
+  }
+}
