@@ -1,0 +1,53 @@
+{
+  "model": "mlp",
+  "horizon": 10,
+  "source": "notebooks/kaggle_train.ipynb (Kaggle GPU, Tesla P100, torch 2.5.1+cu121)",
+  "metrics": {
+    "accuracy": 0.6531457903188804,
+    "macro_f1": 0.47716475000690983,
+    "per_class": {
+      "down": {
+        "precision": 0.34329001994931796,
+        "recall": 0.30136791783026456,
+        "f1": 0.3209658718556233,
+        "support": 21127
+      },
+      "stationary": {
+        "precision": 0.7651219512195122,
+        "recall": 0.7953692622867691,
+        "f1": 0.7799524619347395,
+        "support": 98602
+      },
+      "up": {
+        "precision": 0.34238924136435117,
+        "recall": 0.31955058454375224,
+        "f1": 0.3305759162303665,
+        "support": 19759
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "down",
+        "stationary",
+        "up"
+      ],
+      "matrix": [
+        [
+          6367,
+          12613,
+          2147
+        ],
+        [
+          10197,
+          78425,
+          9980
+        ],
+        [
+          1983,
+          11462,
+          6314
+        ]
+      ]
+    }
+  }
+}
